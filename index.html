@@ -21,11 +21,16 @@
             --color-text-light: #ffffff;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            /* Offset for fixed navbar */
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--color-text-dark);
             background-color: var(--color-background-light);
-            scroll-behavior: smooth;
         }
 
         /* Custom Navigation Styling */
@@ -366,7 +371,7 @@
 
     <footer class="bg-primary text-white py-3">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2025 IG Thalwil für Familien. Alle Rechte vorbehalten. | Eine Initiative für Thalwil.
+            <p class="mb-0">&copy; 2025 Thalwil für Familien. Alle Rechte vorbehalten. | Eine Initiative für Thalwil.
             </p>
         </div>
     </footer>
@@ -374,6 +379,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script>
+        // Close mobile menu after clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
