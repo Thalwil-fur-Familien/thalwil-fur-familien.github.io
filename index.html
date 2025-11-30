@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thalwil für Familien</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             /* Placeholder Color Palette */
-            --color-primary: #5bc0de; /* Light Blue/Aqua */
-            --color-secondary: #5cb85c; /* Soft Green */
-            --color-background-light: #f7faff; /* Very light blueish white */
+            --color-primary: #5bc0de;
+            /* Light Blue/Aqua */
+            --color-secondary: #5cb85c;
+            /* Soft Green */
+            --color-background-light: #f7faff;
+            /* Very light blueish white */
             --color-text-dark: #34495e;
             --color-text-light: #ffffff;
         }
@@ -25,22 +30,26 @@
 
         /* Custom Navigation Styling */
         .navbar {
-            background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white for a clean look */
+            background-color: rgba(255, 255, 255, 0.95);
+            /* Slightly transparent white for a clean look */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
+
         .nav-link {
             color: var(--color-text-dark) !important;
             font-weight: 500;
         }
+
         .nav-link:hover {
             color: var(--color-primary) !important;
         }
 
         /* Hero Section Styling */
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://picsum.photos/1200/800?image=1080&blur=1') center center / cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/harbor_Thalwil_See_03.jpg') center center / cover no-repeat;
             /* Placeholder Image: Thalwil/Lake Zurich suggestion (1080 suggests water/landscape) */
-            height: 80vh; /* Takes up 80% of viewport height */
+            height: 80vh;
+            /* Takes up 80% of viewport height */
             color: var(--color-text-light);
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
@@ -49,6 +58,7 @@
             font-size: 3.5rem;
             font-weight: 700;
         }
+
         .hero-section p {
             font-size: 1.5rem;
             font-weight: 300;
@@ -61,18 +71,23 @@
             font-weight: 600;
             transition: all 0.3s ease;
         }
+
         .btn-primary-custom:hover {
-            background-color: #4ab2d0; /* Darker Aqua */
+            background-color: #4ab2d0;
+            /* Darker Aqua */
             border-color: #4ab2d0;
         }
+
         .btn-secondary-custom {
             background-color: var(--color-secondary);
             border-color: var(--color-secondary);
             font-weight: 600;
             transition: all 0.3s ease;
         }
+
         .btn-secondary-custom:hover {
-            background-color: #4cae4c; /* Darker Green */
+            background-color: #4cae4c;
+            /* Darker Green */
             border-color: #4cae4c;
         }
 
@@ -87,6 +102,7 @@
             color: var(--color-text-light);
             text-align: center;
         }
+
         #events h2 {
             font-weight: 700;
         }
@@ -104,132 +120,149 @@
         }
     </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-        <a class="navbar-brand text-primary fw-bold" href="#">Thalwil für Familien</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">Über Uns</a></li>
-                <li class="nav-item"><a class="nav-link" href="#events">Anlässe</a></li>
-                <li class="nav-item"><a class="nav-link" href="#petition">Petition</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<header id="home" class="hero-section d-flex align-items-center">
-    <div class="container text-center">
-        <h1 class="display-3 mb-3">Thalwil für Familien</h1>
-        <p class="lead">Für ein familienfreundliches Thalwil.</p>
-        <a href="#about" class="btn btn-secondary-custom btn-lg mt-4">Mehr erfahren</a>
-    </div>
-</header>
-
-<section id="about" class="bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2 class="mb-4 text-center text-lg-start">💖 Unsere Mission</h2>
-                <p class="lead" style="line-height: 1.8;">
-                    Der Verein Thalwil für Familien ist eine Initiative engagierter Menschen, die sich für die Bedürfnisse von Familien in Thalwil einsetzen.
-                    Der Verein bringt Anliegen in Bereichen wie Schule, Betreuung, Mobilität, Freizeit, Gesundheit, Wohnen, Integration, soziales Zusammenleben und Sicherheit ein. 
-                    Dabei vertritt er eine progressive Familienpolitik, die die Lebensrealitäten moderner Familien unterstützt.
-                    Als offene Plattform für Austausch und Zusammenarbeit möchte der Verein zu familienfreundlichen Strukturen und einem kinderfreundlichen Thalwil beitragen und im Dialog mit Politik, Verwaltung und lokalen Akteuren positive Impulse setzen.                </p>
-            </div>
-            <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                 <img src="https://picsum.photos/600/400?image=296" class="img-fluid rounded shadow-sm" alt="Familie spielt im Freien">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="#">Thalwil für Familien</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Über Uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Anlässe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#petition">Petition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<section id="events" class="text-white">
-    <div class="container py-5">
-        <h2 class="display-5 mb-4">📢 Gemeindeversammlung am 4.12.2025 ab 19:00</h2>
-        <p class="fs-4 mb-4">
-            Am 4. Dezember 2025 kommt die neue Betreuungsverordnung zur Abstimmung an der Gemeindeversammlung - jede Stimme zählt!
-            
-        </p>
-        <a href="#contact" class="btn btn-light btn-lg fw-bold text-primary-custom">
-            Auf dem Laufenden bleiben
-        </a>
-    </div>
-</section>
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3 mb-3">Thalwil für Familien</h1>
+            <p class="lead">Für ein familienfreundliches Thalwil.</p>
+            <a href="#about" class="btn btn-secondary-custom btn-lg mt-4">Mehr erfahren</a>
+        </div>
+    </header>
 
-<section id="petition" class="bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card p-4 p-md-5 text-center">
-                    <div class="card-body">
-                        <h2 class="card-title mb-4 text-secondary">✍️ Unsere Petition unterstützen</h2>
-                        <p class="card-text fs-5 mb-4">
-                            Wir fordern bessere Rahmenbedingungen für Familien in Thalwil. Ihre Stimme ist entscheidend, um unsere Anliegen in die Politik zu tragen. Nehmen Sie sich eine Minute Zeit, um unsere Petition zu unterschreiben und ein Zeichen zu setzen!
-                        </p>
-                        <a href="https://www.openpetition.eu/" target="_blank" class="btn btn-secondary-custom btn-lg">
-                            Jetzt auf OpenPetition unterschreiben
-                        </a>
+    <section id="about" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4 text-center text-lg-start">💖 Unsere Mission</h2>
+                    <p class="lead" style="line-height: 1.8;">
+                        Der Verein Thalwil für Familien ist eine Initiative engagierter Menschen, die sich für die
+                        Bedürfnisse von Familien in Thalwil einsetzen.
+                        Der Verein bringt Anliegen in Bereichen wie Schule, Betreuung, Mobilität, Freizeit, Gesundheit,
+                        Wohnen, Integration, soziales Zusammenleben und Sicherheit ein.
+                        Dabei vertritt er eine progressive Familienpolitik, die die Lebensrealitäten moderner Familien
+                        unterstützt.
+                        Als offene Plattform für Austausch und Zusammenarbeit möchte der Verein zu familienfreundlichen
+                        Strukturen und einem kinderfreundlichen Thalwil beitragen und im Dialog mit Politik, Verwaltung
+                        und lokalen Akteuren positive Impulse setzen. </p>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <img src="https://picsum.photos/600/400?image=296" class="img-fluid rounded shadow-sm"
+                        alt="Familie spielt im Freien">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="text-white">
+        <div class="container py-5">
+            <h2 class="display-5 mb-4">📢 Gemeindeversammlung am 4.12.2025 ab 19:00</h2>
+            <p class="fs-4 mb-4">
+                Am 4. Dezember 2025 kommt die neue Betreuungsverordnung zur Abstimmung an der Gemeindeversammlung - jede
+                Stimme zählt!
+
+            </p>
+            <a href="#contact" class="btn btn-light btn-lg fw-bold text-primary-custom">
+                Auf dem Laufenden bleiben
+            </a>
+        </div>
+    </section>
+
+    <section id="petition" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4 p-md-5 text-center">
+                        <div class="card-body">
+                            <h2 class="card-title mb-4 text-secondary">✍️ Unsere Petition unterstützen</h2>
+                            <p class="card-text fs-5 mb-4">
+                                Wir fordern bessere Rahmenbedingungen für Familien in Thalwil. Ihre Stimme ist
+                                entscheidend, um unsere Anliegen in die Politik zu tragen. Nehmen Sie sich eine Minute
+                                Zeit, um unsere Petition zu unterschreiben und ein Zeichen zu setzen!
+                            </p>
+                            <a href="https://www.openpetition.eu/" target="_blank"
+                                class="btn btn-secondary-custom btn-lg">
+                                Jetzt auf OpenPetition unterschreiben
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact" class="bg-white">
-    <div class="container">
-        <h2 class="text-center mb-5">📧 Nehmen Sie Kontakt auf</h2>
-        <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h3 class="mb-3">Kontaktformular</h3>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-Mail Adresse</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Ihre Nachricht</label>
-                        <textarea class="form-control" id="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary-custom">Nachricht senden</button>
-                </form>
-            </div>
-            <div class="col-lg-6">
-                <h3 class="mb-3">Kontaktinformationen</h3>
-                <p class="fs-5">
-                    Wir freuen uns über Ihr Interesse und Ihre Anregungen.
-                    Treten Sie in direkten Kontakt mit uns:
-                </p>
-                <ul class="list-unstyled fs-5">
-                    <li class="mb-2">
-                        <i class="bi bi-envelope-fill me-2"></i>
-                        E-Mail: <a href="mailto:kontakt@igthalwil.ch" class="text-decoration-none text-primary-custom">kontakt@igthalwil.ch</a>
-                    </li>
-                    <li class="mb-2">
-                         <i class="bi bi-geo-alt-fill me-2"></i> Standort: Thalwil, Kanton Zürich
-                    </li>
-                </ul>
+    <section id="contact" class="bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">📧 Nehmen Sie Kontakt auf</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Kontaktformular</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-Mail Adresse</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Ihre Nachricht</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom">Nachricht senden</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Kontaktinformationen</h3>
+                    <p class="fs-5">
+                        Wir freuen uns über Ihr Interesse und Ihre Anregungen.
+                        Treten Sie in direkten Kontakt mit uns:
+                    </p>
+                    <ul class="list-unstyled fs-5">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            E-Mail: <a href="mailto:info@thalwil-familie.ch"
+                                class="text-decoration-none text-primary-custom">info@thalwil-familie.ch</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i> Standort: Thalwil, Kanton Zürich
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="bg-primary text-white py-3">
-    <div class="container text-center">
-        <p class="mb-0">&copy; 2025 IG Thalwil für Familien. Alle Rechte vorbehalten. | Eine Initiative für Thalwil.</p>
-    </div>
-</footer>
+    <footer class="bg-primary text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 IG Thalwil für Familien. Alle Rechte vorbehalten. | Eine Initiative für Thalwil.
+            </p>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
