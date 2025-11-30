@@ -370,12 +370,27 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
-        // Close mobile menu after clicking a link
+        // Close mobile menu after clicking a link and handle scroll precision
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
                 const navbarCollapse = document.querySelector('.navbar-collapse');
                 if (navbarCollapse.classList.contains('show')) {
-                    new bootstrap.Collapse(navbarCollapse).hide();
+                    e.preventDefault(); // Prevent default scroll
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    // Close the menu
+                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+                    bsCollapse.hide();
+
+                    // Wait for collapse to finish before scrolling
+                    navbarCollapse.addEventListener('hidden.bs.collapse', () => {
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                            // Update history without scrolling
+                            history.pushState(null, null, targetId);
+                        }
+                    }, { once: true });
                 }
             });
         });
