@@ -136,14 +136,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Über Uns</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#events">Anlässe</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#petition">Petition</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#membership">Mitglied werden</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#member">Für Mitglieder</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">Über Uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" data-i18n="nav.team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events" data-i18n="nav.events">Anlässe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#petition" data-i18n="nav.petition">Petition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#membership" data-i18n="nav.membership">Mitglied werden</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#member" data-i18n="nav.member">Für Mitglieder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Language switcher">
+                            <button type="button" class="btn btn-outline-primary lang-switch" data-lang="de" onclick="switchLanguage('de')">DE</button>
+                            <button type="button" class="btn btn-outline-primary lang-switch" data-lang="en" onclick="switchLanguage('en')">EN</button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -151,9 +157,9 @@
 
     <header id="home" class="hero-section d-flex align-items-center">
         <div class="container text-center">
-            <h1 class="display-3 mb-3">Thalwil für Familien</h1>
-            <p class="lead">Für ein familienfreundliches Thalwil.</p>
-            <a href="#about" class="btn btn-secondary-custom btn-lg mt-4">Mehr erfahren</a>
+            <h1 class="display-3 mb-3" data-i18n="hero.title">Thalwil für Familien</h1>
+            <p class="lead" data-i18n="hero.subtitle">Für ein familienfreundliches Thalwil.</p>
+            <a href="#about" class="btn btn-secondary-custom btn-lg mt-4" data-i18n="hero.cta">Mehr erfahren</a>
         </div>
     </header>
 
@@ -161,8 +167,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="mb-4 text-center text-lg-start">💖 Unsere Mission</h2>
-                    <p class="lead" style="line-height: 1.8;">
+                    <h2 class="mb-4 text-center text-lg-start" data-i18n="about.title">💖 Unsere Mission</h2>
+                    <p class="lead" style="line-height: 1.8;" data-i18n="about.text">
                         Der Verein Thalwil für Familien ist eine Initiative engagierter Menschen, die sich für die
                         Bedürfnisse von Familien in Thalwil einsetzen.
                         Der Verein bringt Anliegen in Bereichen wie Schule, Betreuung, Mobilität, Freizeit, Gesundheit,
@@ -183,8 +189,8 @@
 
     <section id="team" class="bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Wer sind wir?</h2>
-            <p class="lead text-center mb-5">
+            <h2 class="text-center mb-5" data-i18n="team.title">Wer sind wir?</h2>
+            <p class="lead text-center mb-5" data-i18n="team.subtitle">
                 Unser Vorstand setzt sich aus engagierten Thalwilerinnen und Thalwilern zusammen, die sich ehrenamtlich
                 für Familien einsetzen.
             </p>
@@ -195,7 +201,7 @@
                             <img src="images/face_cf.jpeg" class="rounded-circle mb-3 object-fit-cover"
                                 alt="Christian Fischer" width="150" height="150">
                             <h5 class="card-title">Christian Fischer</h5>
-                            <p class="text-muted">Präsident</p>
+                            <p class="text-muted" data-i18n="team.role.president">Präsident</p>
                         </div>
                     </div>
                 </div>
@@ -205,7 +211,7 @@
                             <img src="images/face_fa.jpeg" class="rounded-circle mb-3 object-fit-cover"
                                 alt="Fabrizio Anner" width="150" height="150">
                             <h5 class="card-title">Fabrizio Anner</h5>
-                            <p class="text-muted">Operatives</p>
+                            <p class="text-muted" data-i18n="team.role.operations">Operatives</p>
                         </div>
                     </div>
                 </div>
@@ -215,7 +221,7 @@
                             <img src="images/face_sh.jpeg" class="rounded-circle mb-3 object-fit-cover"
                                 alt="Sabrina Hösli" width="150" height="150">
                             <h5 class="card-title">Sabrina Hösli</h5>
-                            <p class="text-muted">Aktuarin</p>
+                            <p class="text-muted" data-i18n="team.role.actuary">Aktuarin</p>
                         </div>
                     </div>
                 </div>
@@ -225,13 +231,13 @@
 
     <section id="events" class="text-white">
         <div class="container py-5">
-            <h2 class="display-5 mb-4">📢 Gemeindeversammlung am 4.12.2025 ab 19:00</h2>
-            <p class="fs-4 mb-4">
+            <h2 class="display-5 mb-4" data-i18n="events.title">📢 Gemeindeversammlung am 4.12.2025 ab 19:00</h2>
+            <p class="fs-4 mb-4" data-i18n="events.text">
                 Am 4. Dezember 2025 kommt die neue Betreuungsverordnung zur Abstimmung an der Gemeindeversammlung - jede
                 Stimme zählt!
 
             </p>
-            <a href="#contact" class="btn btn-light btn-lg fw-bold text-primary-custom">
+            <a href="#contact" class="btn btn-light btn-lg fw-bold text-primary-custom" data-i18n="events.cta">
                 Auf dem Laufenden bleiben
             </a>
         </div>
@@ -243,14 +249,14 @@
                 <div class="col-lg-8">
                     <div class="card p-4 p-md-5 text-center">
                         <div class="card-body">
-                            <h2 class="card-title mb-4 text-secondary">✍️ Unsere Petition unterstützen</h2>
-                            <p class="card-text fs-5 mb-4">
+                            <h2 class="card-title mb-4 text-secondary" data-i18n="petition.title">✍️ Unsere Petition unterstützen</h2>
+                            <p class="card-text fs-5 mb-4" data-i18n="petition.text">
                                 Wir fordern bessere Rahmenbedingungen für Familien in Thalwil. Ihre Stimme ist
                                 entscheidend, um unsere Anliegen in die Politik zu tragen. Nehmen Sie sich eine Minute
                                 Zeit, um unsere Petition zu unterschreiben und ein Zeichen zu setzen!
                             </p>
                             <a href="https://www.openpetition.eu/ch/petition/online/ein-hort-fuer-alle-planbar-bezahlbar"
-                                target="_blank" class="btn btn-secondary-custom btn-lg">
+                                target="_blank" class="btn btn-secondary-custom btn-lg" data-i18n="petition.cta">
                                 Petition "Ein Hort für alle - planbar und bezahlbar" unterschreiben
                             </a>
                         </div>
@@ -264,32 +270,32 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-4">🤝 Mitglied werden</h2>
-                    <p class="lead mb-4">
+                    <h2 class="mb-4" data-i18n="membership.title">🤝 Mitglied werden</h2>
+                    <p class="lead mb-4" data-i18n="membership.text">
                         Werden Sie Teil unserer Gemeinschaft und unterstützen Sie uns dabei, Thalwil
                         familienfreundlicher zu gestalten.
                         Als Mitglied profitieren Sie von unserem Netzwerk und können aktiv mitgestalten.
                     </p>
                     <div class="card border-0 shadow-sm mb-4">
                         <div class="card-body">
-                            <h3 class="h4 text-primary-custom mb-4">Jahresbeiträge</h3>
+                            <h3 class="h4 text-primary-custom mb-4" data-i18n="membership.fees.title">Jahresbeiträge</h3>
                             <div class="row g-3">
                                 <div class="col-md-4">
                                     <div class="p-3 border rounded bg-light h-100">
                                         <div class="fs-2 fw-bold">CHF 20.-</div>
-                                        <div class="text-muted">Einzelmitglieder</div>
+                                        <div class="text-muted" data-i18n="membership.fees.single">Einzelmitglieder</div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="p-3 border rounded bg-light h-100">
                                         <div class="fs-2 fw-bold">CHF 30.-</div>
-                                        <div class="text-muted">Familien & Paare</div>
+                                        <div class="text-muted" data-i18n="membership.fees.family">Familien & Paare</div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="p-3 border rounded bg-light h-100">
                                         <div class="fs-2 fw-bold">CHF 50.-</div>
-                                        <div class="text-muted">Juristische Personen</div>
+                                        <div class="text-muted" data-i18n="membership.fees.corporate">Juristische Personen</div>
                                     </div>
                                 </div>
                             </div>
@@ -307,12 +313,12 @@
 
     <section id="member" class="bg-light text-center">
         <div class="container">
-            <h2 class="mb-4">🔐 Für Mitglieder</h2>
-            <p class="lead mb-4">
+            <h2 class="mb-4" data-i18n="member.title">🔐 Für Mitglieder</h2>
+            <p class="lead mb-4" data-i18n="member.text">
                 Hier gelangen Sie zum internen Mitgliederbereich.
             </p>
             <a href="https://thalwilfuerfamilien.webling.ch/portal#/" target="_blank"
-                class="btn btn-secondary-custom btn-lg">
+                class="btn btn-secondary-custom btn-lg" data-i18n="member.cta">
                 Zum Mitgliederportal
             </a>
         </div>
@@ -320,11 +326,11 @@
 
     <section id="contact" class="bg-white">
         <div class="container">
-            <h2 class="text-center mb-5">📧 Nehmen Sie Kontakt auf</h2>
+            <h2 class="text-center mb-5" data-i18n="contact.title">📧 Nehmen Sie Kontakt auf</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
 
-                    <p class="fs-5">
+                    <p class="fs-5" data-i18n="contact.text">
                         Wir freuen uns über Ihr Interesse und Ihre Anregungen.
                         Treten Sie in direkten Kontakt mit uns:
                     </p>
@@ -335,8 +341,8 @@
                                 class="text-decoration-none text-primary-custom">info@thalwil-familien.ch</a>
                         </li>
                         <li class="mb-2">
-                            <i class="bi bi-geo-alt-fill me-2"></i> Adresse: Thalwil für Familien, Alte Landstrasse 105,
-                            8800 Thalwil
+                            <i class="bi bi-geo-alt-fill me-2"></i> <span data-i18n="contact.address">Adresse: Thalwil für Familien, Alte Landstrasse 105,
+                            8800 Thalwil</span>
                         </li>
                     </ul>
                 </div>
@@ -346,7 +352,7 @@
 
     <footer class="bg-primary text-white py-3">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2025 Thalwil für Familien. Alle Rechte vorbehalten. | Eine Initiative für Thalwil.
+            <p class="mb-0" data-i18n="footer.copyright">&copy; 2025 Thalwil für Familien. Alle Rechte vorbehalten. | Eine Initiative für Thalwil.
             </p>
         </div>
     </footer>
@@ -354,6 +360,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    
+    <!-- i18n Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+
     <script>
         // Close mobile menu after clicking a link and handle scroll precision
         document.querySelectorAll('.nav-link').forEach(link => {
