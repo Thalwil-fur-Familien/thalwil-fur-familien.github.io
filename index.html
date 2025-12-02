@@ -11,7 +11,7 @@
     <style>
         :root {
             /* Placeholder Color Palette */
-            --color-primary: #5bc0de;
+            --color-primary: #0b6ffd;
             /* Light Blue/Aqua */
             --color-secondary: #5cb85c;
             /* Soft Green */
@@ -69,6 +69,11 @@
             font-weight: 300;
         }
 
+        /* Custom Text Colors */
+        .text-primary-custom {
+            color: var(--color-primary) !important;
+        }
+
         /* Custom Buttons */
         .btn-primary-custom {
             background-color: var(--color-primary);
@@ -78,9 +83,9 @@
         }
 
         .btn-primary-custom:hover {
-            background-color: #4ab2d0;
-            /* Darker Aqua */
-            border-color: #4ab2d0;
+            background-color: #0a58ca;
+            /* Darker Blue */
+            border-color: #0a58ca;
         }
 
         .btn-secondary-custom {
@@ -123,6 +128,22 @@
         #contact {
             background-color: var(--color-background-light);
         }
+
+        /* Custom Utilities */
+        .bg-primary-custom {
+            background-color: var(--color-primary) !important;
+        }
+
+        .btn-outline-primary-custom {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .btn-outline-primary-custom:hover,
+        .btn-outline-primary-custom.active {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -130,7 +151,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand text-primary fw-bold" href="#">Thalwil für Familien</a>
+            <a class="navbar-brand text-primary-custom fw-bold" href="#">Thalwil für Familien</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -148,9 +169,9 @@
                     <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Kontakt</a></li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                         <div class="btn-group btn-group-sm" role="group" aria-label="Language switcher">
-                            <button type="button" class="btn btn-outline-primary lang-switch" data-lang="de"
+                            <button type="button" class="btn btn-outline-primary-custom lang-switch" data-lang="de"
                                 onclick="switchLanguage('de')">DE</button>
-                            <button type="button" class="btn btn-outline-primary lang-switch" data-lang="en"
+                            <button type="button" class="btn btn-outline-primary-custom lang-switch" data-lang="en"
                                 onclick="switchLanguage('en')">EN</button>
                         </div>
                     </li>
@@ -327,7 +348,7 @@
                 Hier gelangen Sie zum internen Mitgliederbereich.
             </p>
             <a href="https://thalwilfuerfamilien.webling.ch/portal#/" target="_blank"
-                class="btn btn-secondary-custom btn-lg" data-i18n="member.cta">
+                class="btn btn-primary-custom btn-lg" data-i18n="member.cta">
                 Zum Mitgliederportal
             </a>
         </div>
@@ -360,7 +381,7 @@
         </div>
     </section>
 
-    <footer class="bg-primary text-white py-3">
+    <footer class="bg-primary-custom text-white py-3">
         <div class="container text-center">
             <p class="mb-0" data-i18n="footer.copyright">&copy; 2025 Thalwil für Familien. Alle Rechte vorbehalten. |
                 Eine Initiative für Thalwil.
